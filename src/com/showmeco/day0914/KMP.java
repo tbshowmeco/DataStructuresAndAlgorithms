@@ -27,6 +27,7 @@ public class KMP {
                 //说明两者相等
                 j++;
             } else {
+                if (j != 0) i--;
                 //说明不相等,直接拿next数组比较
                 j = next[j];//要排除第一个元素
             }
